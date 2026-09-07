@@ -1,0 +1,5 @@
+# The index synsema.com mirrors every hour. Order here is the order on the site; `featured` goes first.
+
+[[recipe]]
+path = "lampson"
+featured = true

@@ -1,0 +1,30 @@
+# Lampson as a recipe. The code lives in kitecosmic/lampson at the tag below; this file only says what
+# the code cannot say about itself. The `require` block of web.syn is the manifest of capabilities.
+
+name = "Lampson"
+slug = "lampson"
+version = "0.2.8"
+kind = "web"
+entry = "web.syn"
+engine = "0.6"
+tagline = "The open-source coding agent, hosted. Your own Lampson at a URL, with a workspace of its own."
+tagline_es = "El agente de programación open source, alojado. Tu propio Lampson en una URL, con un workspace propio."
+tagline_pt = "O agente de programação open source, hospedado. Seu próprio Lampson em uma URL, com um workspace só dele."
+
+[source]
+repo = "https://github.com/kitecosmic/lampson"
+ref = "v0.2.8"
+
+[secrets]
+LAMPSON_API_KEY = "Key of the LLM provider named by LAMPSON_PROVIDER (deepseek, anthropic, openai, glm, groq, …)"
+LAMPSON_WEB_TOKEN = "Token that opens the web UI from outside the machine; without it only loopback is allowed"
+
+[env]
+LAMPSON_PROVIDER = "deepseek"
+LAMPSON_PERMISSION = "ask"
+LAMPSON_SHELL = "bash"
+
+[volumes]
+workspace = "./workspace"
+memory = "./memory"
+state = "./.lampson"
