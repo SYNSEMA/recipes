@@ -9,6 +9,8 @@ entry = "web.syn"
 engine = "0.6"
 # the bash tool needs `require exec`, which only the Enterprise ceiling grants
 plan = "enterprise"
+# eight MCP supervisors and the conversations in memory: under 512 MB it is killed and restarted
+memory = "1g"
 tagline = "The open-source coding agent, hosted. Your own Lampson at a URL, with a workspace of its own."
 tagline_es = "El agente de programación open source, alojado. Tu propio Lampson en una URL, con un workspace propio."
 tagline_pt = "O agente de programação open source, hospedado. Seu próprio Lampson em uma URL, com um workspace só dele."
