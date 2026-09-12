@@ -3,3 +3,9 @@
 [[recipe]]
 path = "lampson"
 featured = true
+
+[[recipe]]
+path = "vela-app"
+
+[[recipe]]
+path = "vela-payroll"

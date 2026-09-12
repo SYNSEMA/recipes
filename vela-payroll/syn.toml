@@ -1,0 +1,30 @@
+# Private payroll on Vela (Horizen) as a recipe. The code lives in SYNSEMA/vela-payroll at the tag
+# below; this file only says what the code cannot say about itself. The guest (app/app.syn) is built
+# to build/app.wasm and deployed to Vela for one employer and one stablecoin; the entry is the client
+# (fund, pay runs from a CSV, payslips, withdrawals, on-chain claims), which today runs with the
+# binary (`synsema run client/vela_client.syn -- …`). The `require` blocks are the manifests.
+
+name = "Private payroll on Vela"
+slug = "vela-payroll"
+version = "0.1.0"
+kind = "worker"
+entry = "client/vela_client.syn"
+engine = "0.6"
+tagline = "Private payroll on Horizen's Vela, in Synsema: an employer pays a list of people in a stablecoin; each sees only their payslips."
+tagline_es = "Nómina privada en Vela (Horizen) con Synsema: una empresa paga a una lista de personas en stablecoin; cada una ve sólo sus recibos."
+tagline_pt = "Folha de pagamento privada no Vela (Horizen) com Synsema: uma empresa paga uma lista de pessoas em stablecoin; cada uma vê só os seus holerites."
+
+[secrets]
+VELA_SECP_KEY = "secp256k1 key that signs the transactions and pays the fees (hex; Anvil #0 on the local devnet)"
+VELA_P521_KEY = "P-521 private key for the encrypted channel with the Executor (hex; `vela_client.syn -- keys` makes one)"
+
+[env]
+VELA_TOKEN = ""
+VELA_RPC_URL = "http://localhost:8545"
+VELA_AUTHORITY_URL = "http://localhost:8081"
+VELA_SUBGRAPH_URL = "http://localhost:8000/subgraphs/name/hcce"
+VELA_MAX_FEE = "100"
+
+[source]
+repo = "https://github.com/SYNSEMA/vela-payroll"
+ref = "v0.1.0"

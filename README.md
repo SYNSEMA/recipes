@@ -7,6 +7,8 @@ Programs that already work, ready to deploy on [synsema.com](https://synsema.com
 | Recipe | What it is | Code |
 |---|---|---|
 | [lampson](lampson/) | The open-source coding agent, hosted: your own Lampson at a URL, with a workspace of its own. | [kitecosmic/lampson](https://github.com/kitecosmic/lampson) `v0.2.8` |
+| [vela-app](vela-app/) | A confidential app for Horizen's Vela: the guest with its tests, built to a module Vela loads, and the client for the other side of the enclave. | [SYNSEMA/vela-app](https://github.com/SYNSEMA/vela-app) `v0.1.0` |
+| [vela-payroll](vela-payroll/) | Private payroll on Vela: an employer pays a list of people in a stablecoin from a CSV; each sees only their payslips; withdrawals settle on-chain. | [SYNSEMA/vela-payroll](https://github.com/SYNSEMA/vela-payroll) `v0.1.0` |
 
 ## How a recipe works
 
