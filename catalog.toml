@@ -12,3 +12,6 @@ path = "vela-payroll"
 
 [[recipe]]
 path = "vela-treasury"
+
+[[recipe]]
+path = "vela-auction"

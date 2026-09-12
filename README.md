@@ -10,6 +10,7 @@ Programs that already work, ready to deploy on [synsema.com](https://synsema.com
 | [vela-app](vela-app/) | A confidential app for Horizen's Vela: the guest with its tests, built to a module Vela loads, and the client for the other side of the enclave. | [SYNSEMA/vela-app](https://github.com/SYNSEMA/vela-app) `v0.1.1` |
 | [vela-payroll](vela-payroll/) | Private payroll on Vela: an employer pays a list of people in a stablecoin from a CSV; each sees only their payslips; withdrawals settle on-chain. | [SYNSEMA/vela-payroll](https://github.com/SYNSEMA/vela-payroll) `v0.1.1` |
 | [vela-treasury](vela-treasury/) | An agent treasury on Vela: an agent proposes payments, the enclave applies the owner's policy, a contract pays — LLM outside, policy inside. The worker is the entry. | [SYNSEMA/vela-treasury](https://github.com/SYNSEMA/vela-treasury) `v0.1.1` |
+| [vela-auction](vela-auction/) | A sealed-bid auction on Vela: encrypted bids, matching inside the enclave, settlement from escrow; losing bids are never revealed. | [SYNSEMA/vela-auction](https://github.com/SYNSEMA/vela-auction) `v0.1.0` |
 
 ## How a recipe works
 
