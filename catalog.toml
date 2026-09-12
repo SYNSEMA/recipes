@@ -9,3 +9,6 @@ path = "vela-app"
 
 [[recipe]]
 path = "vela-payroll"
+
+[[recipe]]
+path = "vela-treasury"
