@@ -8,7 +8,7 @@
 
 name = "Agent treasury on Vela"
 slug = "vela-treasury"
-version = "0.2.1"
+version = "0.2.2"
 kind = "web"
 entry = "web.syn"
 engine = "0.6"
@@ -42,4 +42,4 @@ data = "./data"
 
 [source]
 repo = "https://github.com/SYNSEMA/vela-treasury"
-ref = "v0.2.1"
+ref = "v0.2.2"
