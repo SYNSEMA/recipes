@@ -1,4 +1,4 @@
-# A Vela (Horizen) app in Synsema as a recipe. The code lives in SYNSEMA/vela-app at the tag under
+# Private transfers on Vela (Horizen) as a recipe, and the starter kit for any Vela app. The code lives in SYNSEMA/vela-transfers at the tag under
 # [source]; the entry is the workbench (web.syn), a web app that
 # embeds app/app.syn into the release's guest module, deploys it to Vela and drives it from the
 # browser: register, deposit, any payload encrypted to the Executor, your events decrypted, the
@@ -6,15 +6,15 @@
 # code cannot say about itself; the `require` blocks are the manifests of capabilities. The CLI in
 # client/ does the same from a terminal, on the same library.
 
-name = "Vela app"
-slug = "vela-app"
-version = "0.3.0"
+name = "Private transfers"
+slug = "vela-transfers"
+version = "0.4.0"
 kind = "web"
 entry = "web.syn"
 engine = "0.6"
-tagline = "A confidential app for Horizen's Vela, in Synsema: the guest, its tests, and a workbench for the other side of the enclave."
-tagline_es = "Una app confidencial para Vela (Horizen) en Synsema: el guest, sus tests y una mesa de trabajo para el otro lado del enclave."
-tagline_pt = "Um app confidencial para o Vela (Horizen) em Synsema: o guest, seus testes e uma bancada para o outro lado do enclave."
+tagline = "Private transfers on Horizen's Vela, in Synsema: balances and transfers stay encrypted in the enclave, each transfer carries an invoice and leaves one public receipt; the starter kit for any Vela app, with the guest, its tests and a workbench."
+tagline_es = "Transferencias privadas en Vela (Horizen) con Synsema: saldos y transferencias quedan cifrados en el enclave, cada transferencia lleva una factura y deja un recibo público; el kit de inicio para cualquier app de Vela, con el guest, sus tests y una mesa de trabajo."
+tagline_pt = "Transferências privadas no Vela (Horizen) com Synsema: saldos e transferências ficam cifrados no enclave, cada transferência leva uma fatura e deixa um recibo público; o kit inicial para qualquer app do Vela, com o guest, seus testes e uma bancada."
 
 [secrets]
 VELA_SECP_KEY = "the secp256k1 key that signs the transactions and pays the fees (hex). On the public devnet the token comes with an account of its own: a deployer with ETH and test tokens."
@@ -39,5 +39,5 @@ env_url = "https://devnet.synsema.app/token"
 data = "./data"
 
 [source]
-repo = "https://github.com/SYNSEMA/vela-app"
-ref = "v0.3.0"
+repo = "https://github.com/SYNSEMA/vela-transfers"
+ref = "v0.4.0"

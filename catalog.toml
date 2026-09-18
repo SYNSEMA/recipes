@@ -5,13 +5,13 @@ path = "lampson"
 featured = true
 
 [[recipe]]
-path = "vela-app"
+path = "vela-policy-engine"
+
+[[recipe]]
+path = "vela-dark-pool"
 
 [[recipe]]
 path = "vela-payroll"
 
 [[recipe]]
-path = "vela-treasury"
-
-[[recipe]]
-path = "vela-auction"
+path = "vela-transfers"
