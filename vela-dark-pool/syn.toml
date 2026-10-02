@@ -7,7 +7,7 @@
 
 name = "Dark pool"
 slug = "vela-dark-pool"
-version = "0.3.0"
+version = "0.3.1"
 kind = "web"
 entry = "web.syn"
 engine = "0.6"
@@ -40,4 +40,4 @@ data = "./data"
 
 [source]
 repo = "https://github.com/SYNSEMA/vela-dark-pool"
-ref = "v0.3.0"
+ref = "v0.3.1"
