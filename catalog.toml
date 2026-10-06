@@ -1,8 +1,5 @@
 # The index synsema.com mirrors every hour. Order here is the order on the site; `featured` goes first.
-
-[[recipe]]
-path = "lampson"
-featured = true
+# lampson/ stays in the repo but out of the index: it needs a whole machine (a Desk), not a service.
 
 [[recipe]]
 path = "vela-policy-engine"
