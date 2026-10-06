@@ -1,9 +1,10 @@
-# Lampson as a recipe. The code lives in kitecosmic/lampson at the tag below; this file only says what
+# Lampson as a recipe. The code lives in kitecosmic/lampson at its latest release (ref = "latest": the
+# control resolves the tag on every sync, and a published release syncs at once); this file only says what
 # the code cannot say about itself. The `require` block of web.syn is the manifest of capabilities.
 
 name = "Lampson"
 slug = "lampson"
-version = "0.2.8"
+version = "0.2.9"
 kind = "web"
 entry = "web.syn"
 engine = "0.6"
@@ -17,7 +18,7 @@ tagline_pt = "O agente de programação open source, hospedado. Seu próprio Lam
 
 [source]
 repo = "https://github.com/kitecosmic/lampson"
-ref = "v0.2.8"
+ref = "latest"
 
 [secrets]
 LAMPSON_API_KEY = "Key of the LLM provider named by LAMPSON_PROVIDER (deepseek, anthropic, openai, glm, groq, …)"
